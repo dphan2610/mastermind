@@ -1,12 +1,9 @@
 package com.dphan.mastermind.core;
 
-import com.dphan.mastermind.core.Pin;
 import com.tngtech.java.junit.dataprovider.DataProvider;
 
 import java.util.Arrays;
 import java.util.List;
-import static com.dphan.mastermind.core.Pin.BLACK;
-import static com.dphan.mastermind.core.Pin.WHITE;
 
 public class MastermindDataProvider {
 
