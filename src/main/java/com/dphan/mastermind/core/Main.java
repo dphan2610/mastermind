@@ -22,7 +22,10 @@ public class Main {
         List<String> solution = getSequence(option, problemSize);
 
         println("Solution: " + Arrays.toString(solution.toArray()));
+        mainGameLoop(problemSize, solution);
+    }
 
+    private static void mainGameLoop(int problemSize, List<String> solution) {
         Scanner scanner = new Scanner(System.in);
         while (true) {
             print("Enter guess sequence: ");
@@ -43,7 +46,6 @@ public class Main {
 
             } catch (IllegalArgumentException iae) {
                 println(iae.getMessage());
-                continue;
             }
         }
     }
@@ -86,7 +88,6 @@ public class Main {
                 return getInputSequenceList(input, NUMBER_LIST_MASTER, size);
             } catch (IllegalArgumentException iae) {
                 println(iae.getMessage());
-                continue;
             }
         }
     }
